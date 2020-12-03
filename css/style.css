@@ -1,3 +1,100 @@
-.wrapper{
-    
+*{
+    background-color: rgb(163, 173, 154);
+}
+
+#wrapper{
+    display: grid;
+    grid-template-areas: 
+    "he he he"
+    "na na na"
+    "ma ma ma"
+    "ma ma ma"
+    "ma ma ma"
+    "fo fo fo"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.loga{
+    width: 400px;
+}
+
+.header{
+    grid-template-areas: he;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 250px;
+}
+
+
+.nav{
+    grid-template-areas: ma;
+    display: grid;
+    grid-template-areas: 
+    "me in os"
+    ;
+    grid-template-columns: 33%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-left: 70px;
+
+}
+
+.chose_1{
+    grid-area: me;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.chose_2{
+    grid-area: in;
+    text-decoration: none;
+    margin-left: 70px;
+}
+
+.chose_3{
+    grid-area: os;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.main{
+    grid-area: ma;
+    display: grid;
+    grid-template-areas: 
+    "i1 s1 s1"
+    "s2 s2 i2"
+    "i3 s3 s3"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-height: 300px ;
+    background-color:rgb(163, 173, 154);
+}
+
+.kraken{
+    grid-area: s1;
+    margin-left: 110px;
+}
+
+.kraken_img{
+    grid-area: i1;
+    width: 100px;
+    height: auto;
+}
+
+.hydra{
+    grid-area: s2;
+}
+
+.hydra_img{
+    grid-area: i2;
+    height: 50px;
+    width: auto;
+}
+
+.footer{
+    grid-template-areas: fo;
 }
