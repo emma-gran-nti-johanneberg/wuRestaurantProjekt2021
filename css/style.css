@@ -1,3 +1,7 @@
+body{
+    margin: 0px;
+}
+
 #wrapper{
     display: grid;
     grid-template-areas: 
@@ -9,8 +13,7 @@
     "fo fo fo"
     ;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 150px 100px auto auto auto 100px;
-
+    grid-template-rows: 150px 100px auto auto auto 200px;
 }
 
 .header{
@@ -27,7 +30,6 @@
     height: 150px;
 }
 
-
 .nav{
     grid-area: na;
     display: inline-flex;
@@ -37,118 +39,52 @@
     background-color: rgb(109, 221, 65);
 }
 
-.main{
+.nav a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family:fantasy;
+}
+
+.main_index{
     grid-area: ma;
-    display: inline-flexbox;
+    display: flex;
+    align-items: center;
+    text-size-adjust: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main_index div{
+    flex-basis: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_meny{
+    grid-area: ma;
+    display: flexbox;
 
 }
 
 .kraken img{
     width: 350px;
+    margin-right: 25px;
 }
 
 .hydra img{
     width: 350px;
+    margin-left: 25px;
 }
 
 .footer{
     grid-area: fo;
-}
-
-
-/*;
-body{
-    margin: 0px;
-    background-color: rgb(163, 173, 154)
-}
-
-.header{
-    display: grid;
-    grid-template-areas: 
-    "t1 lo t2";
-    grid-template-columns: 33%;
-    grid-template-rows: 1fr;
-    align-items: center;
-    background-color: rgb(4, 34, 0);
-    padding: 50px;
-}
-
-h2{
-    color: white;
-}
-
-.title_1{
-    grid-area: t1;
-}
-
-.loga{
-    grid-area: lo;
-    width: 300px;
-}
-
-.title_2{
-    grid-area: t2;
-}
-
-
-.nav{
-    grid-template-areas: na;
-    display: grid;
-    grid-template-areas: 
-    "me in os";
-    grid-template-columns: 33%;
-    grid-template-rows: 1fr;
-    align-items: center;
-    padding-left: 40px;
     background-color: rgb(109, 221, 65);
+    display: inline-flexbox;
 }
 
-.chose_1{
-    grid-area: me;
-    text-decoration: none;
-    margin-left: 100px;
+.footer img{
+    width: 40px;
+    height: 19px;
 }
-
-.chose_2{
-    grid-area: in;
-    text-decoration: none;
-    margin-left: 70px;
-}
-
-.chose_3{
-    grid-area: os;
-    text-decoration: none;
-    margin-left: 2px;
-}
-
-
-
-.main{
-    grid-area: ma;
-    display: flexbox;
-    flex-direction: row;
-}
-
-.kraken{
-    margin-left: 2px;
-    background-color: tomato;
-    min-height: 100px;
-}
-
-#kraken_img{
-    height: 350px;
-}
-
-.hydra{
-    background-color: turquoise;
-    min-height: 200px;
-}
-
-#hydra_img{
-    height: 350px;
-}
-
-.footer{
-    grid-template-areas: fo;
-}
-*/
