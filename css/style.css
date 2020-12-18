@@ -1,3 +1,4 @@
+
 body{
     margin: 0px;
 }
@@ -14,11 +15,12 @@ body{
     ;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 150px 100px auto auto auto 200px;
+    font-family: 'Cinzel Decorative', cursive;
 }
 
 .header{
     grid-area: he;
-    background-color:rgb(163, 173, 154);
+    background-color:#73A088;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -27,7 +29,7 @@ body{
 }
 
 .loga img{
-    height: 150px;
+    height: 175px;
 }
 
 .nav{
@@ -36,13 +38,13 @@ body{
     align-items: center;
     justify-content: space-around;
     padding-left: 40px;
-    background-color: rgb(109, 221, 65);
+    background-color:#85FF73;
+    font-weight:700;
 }
 
 .nav a{
     text-decoration: none;
     font-size: 25px;
-    font-family:fantasy;
 }
 
 .main_index{
@@ -52,6 +54,7 @@ body{
     text-size-adjust: 30px;
     justify-content: center;
     flex-wrap: wrap;
+    background-color:#47CC84;
 }
 
 .main_index div{
@@ -60,12 +63,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.chess_ruta{
+    background-color: #d8bedd;
 }
 
 .main_meny{
     grid-area: ma;
     display: flexbox;
+    background-color: #d8bedd;
+    padding: 20px;
+}
 
+.main_om{
+    background-color: #d8bedd;
+    padding: 20px;
+    width: 1223px;
 }
 
 .kraken img{
@@ -80,8 +96,13 @@ body{
 
 .footer{
     grid-area: fo;
-    background-color: rgb(109, 221, 65);
-    display: inline-flexbox;
+    background-color: #85FF73;
+    display:inline-flex;
+    align-items: center;
+}
+
+.footer_text{
+    padding-left: 20px;
 }
 
 .footer img{
