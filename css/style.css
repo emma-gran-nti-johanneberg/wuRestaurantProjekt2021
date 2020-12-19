@@ -8,24 +8,27 @@ body{
     grid-template-areas: 
     "he he he"
     "na na na"
+    "cr cr cr"
     "ma ma ma"
     "ma ma ma"
     "ma ma ma"
     "fo fo fo"
     ;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 150px 100px auto auto auto 200px;
+    grid-template-rows: 150px 100px auto auto auto auto 200px;
     font-family: 'Cinzel Decorative', cursive;
+    background-color:#032130;
 }
 
 .header{
     grid-area: he;
-    background-color:#73A088;
+    background-color:#032130;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0px;
+    color: #F1BD1B;
 }
 
 .loga img{
@@ -38,13 +41,48 @@ body{
     align-items: center;
     justify-content: space-around;
     padding-left: 40px;
-    background-color:#85FF73;
+    background-color:#032130;
     font-weight:700;
 }
 
 .nav a{
     text-decoration: none;
     font-size: 25px;
+}
+
+.nav a:link{
+    color:#76E482 ;
+    }
+
+    /* visited link */
+    a:visited {
+    color: #BD88DF;
+    }
+  
+    /* mouse over link */
+    a:hover {
+    color: #F1BD1B;
+    }
+  
+    /* selected link */
+    a:active {
+    color: rgb(204, 11, 11);
+    }
+
+
+.crazzy_main{
+    grid-area: cr;
+    background-color:#76E482;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-left: 300px;
+    margin: 75px;
+}
+
+.crazzy_main img{
+    width: 65%;
+    border-radius: 30px;
 }
 
 .main_index{
@@ -54,10 +92,12 @@ body{
     text-size-adjust: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    background-color:#47CC84;
+    border-radius: 30px;
+    transition: 2.7s;
 }
 
-.main_index div{
+
+.kraken{
     flex-basis: 50%;
     height: 200px;
     display: flex;
@@ -65,44 +105,92 @@ body{
     align-items: center;
     font-size: 30px;
     font-weight: bolder;
+    background-color:#032130;
+    color:#BD88DF ;
 }
 
-.chess_ruta{
-    background-color: #d8bedd;
+.hydra{
+    flex-basis: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color:#032130;
+    color: #F1BD1B;
 }
 
 .main_meny{
     grid-area: ma;
-    display: flexbox;
+    display: flex;
+    justify-content: space-around;
     background-color: #d8bedd;
-    padding: 20px;
+    padding: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    flex-direction: column;
 }
 
 .main_om{
     background-color: #d8bedd;
-    padding: 20px;
-    width: 1223px;
+    padding: 40px;
+    margin-left: 75px;
+    width: 1000px;
+}
+
+.main_om a{
+  color: #032130;
+}
+
+.main_om img{
+    width: 450px;
+    padding-left: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .kraken img{
     width: 350px;
     margin-right: 25px;
+    border-radius: 30px;
+    transition: 2s;    
 }
 
+
+.kraken img:hover{
+    transform: scale(1.15);
+}
 .hydra img{
     width: 350px;
     margin-left: 25px;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    transition: 2s;
+}
+
+.hydra img:hover{
+    transform: scale(1.15);
 }
 
 .footer{
     grid-area: fo;
-    background-color: #85FF73;
+    background-color: #76E482;
     display:inline-flex;
     align-items: center;
+    color: #032130;
+}
+
+.mini_rubruik{
+    padding-left: 25px;
+    font-weight: 800;
 }
 
 .footer_text{
     padding-left: 20px;
+    font-weight: 600;
 }
 
 .footer img{
