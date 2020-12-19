@@ -89,7 +89,6 @@ body{
     grid-area: ma;
     display: flex;
     align-items: center;
-    text-size-adjust: 30px;
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 30px;
@@ -137,7 +136,9 @@ body{
     background-color: #d8bedd;
     padding: 40px;
     margin-left: 75px;
+    margin-bottom: 50px;
     width: 1000px;
+    height: auto;
 }
 
 .main_om a{
